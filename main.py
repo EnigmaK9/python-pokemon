@@ -17,7 +17,16 @@ class Pokemon:
     self.name = name
     self.types = types
     self.moves = moves
-    self.attack = EVs['']
+    self.attack = EVs['ATTACK']
+    self.defense = EVs['DEFENSE']
+    self.bars = 20 # amount of health bars
+
+    def fight(self, Pokemon2):
+        # Allow two pokemon to fight each other
+        # Print fight information
+        print("--- Pokémon Battle ---")
+        print(f"\n{self.name}")
+        print("TYPE/")
 
 if __name__ == '__main__':
     pass
